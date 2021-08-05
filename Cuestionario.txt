@@ -1,0 +1,16 @@
+1.-¿Cuantas variantes del algoritmo de Dijkstra hay y cuál es la diferencia entre ellas?
+-Existen 3, Floyd-Warshall, Bellman-Ford, Johnson y la diferencia es cuantas veces de ejecucion tienen
+
+2.-Invetigue sobre los ALGORITMOS DE CAMINOS MINIMOS e indique, ¿Qué
+similitudes encuentra, qué diferencias, en qué casos utilizar y porque?
+
+-Floyd-Warshall, Bellman-Ford, Johnson:
+-La similitud que encontré en las 3 fue que encuentran el camino minimo en grafos dirigidos y que permiten que las aristas
+tengan pesos negativos, la diferencia es que Floyd-Warshall y Bellman-Ford trabajan con grafos dirigidos ponderados y que 
+Johnson trabaja con grafos dirigidos dispersos.
+CASOS EN QUE SE PUEDEN UTILIZAR:
+-Floyd-Warshall: Hallar el camino mínimo desde un vértice hasta otro en un grafo con una matriz de distancias
+-Bellman-Ford: Muy parecido al algoritmo de Dijkstra, pero en vez de seleccionar vorazmente el nodo de peso mínimo aun sin procesar para
+relajarlo, simplemente relaja todas las aristas, y lo hace |V|-1 veces, siendo |V| el número de vértices en el grafo
+-Johnson: Puede ser utilizado para resolver situaciones de secuenciación de procesos que operan dos o más órdenes (operaciones) que pasan a través
+de dos máquinas o centros de trabajo
